@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Makeover - Beauty Redefined</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.postimg.cc/qhXz2ghh/logo.png" alt="Sneha Makeover Logo" style="width: 180px; height: auto;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">💅 Our Services</a></li>
+                <li><a href="#gallery">📸 Gallery</a></li>
+                <li><a href="#reviews">📝 Reviews</a></li>
+                <li><a href="workshop.html">🎓 Workshop</a></li> <!-- Workshop button added -->
+                <li><a href="https://wa.me/+919359545149" target="_blank">📞 Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <!-- Added Image above the Hero Title -->
+        <img src="image/Party  (14).jpeg" alt="Flawless Beauti" style="width: 40%; height: auto; margin-bottom: 20px;">
+        <h1>Flawless Beauty, Just a Brush Away!!!</h1>
+        <p>Luxury makeup artistry to enhance your natural glow.</p>
+        <a href="#services" class="btn">💃 Discover Your Look</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>💎 Our Signature Services </h2>
+        <div class="service-container">
+            <div class="service">
+                <a href="brides.html" class="service-btn"> Bridal<br>Makeup 👰</a>
+            </div>
+            <div class="service">
+                <a href="b2.html" class="service-btn"> Party <br> Makeup 💃</a>
+            </div>
+            <div class="service">
+                <a href="b3.html" class="service-btn"> Engagement Bride 📷</a>
+            </div>
+            <div class="service">
+                <a href="b4.html" class="service-btn"> Receptions <br> Bride 🪻</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h2>📝 Customer Reviews</h2>
+        <div class="review-container">
+            <div class="review-form">
+                <h3>✨ Leave a Review</h3>
+                <form id="review-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <textarea id="review" name="review" rows="4" placeholder="Share your experience..." required></textarea>
+                    <button type="submit">💖 Submit</button>
+                </form>
+            </div>
+            <div class="review-list">
+                <h3>⭐ Customer Feedback</h3>
+                <div id="review-list">
+                    <div class="review-item">
+                        <p>⭐ <strong>Priya S.</strong>: "Absolutely loved the makeup! Highly recommended."</p>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    <div class="review-item">
+                        <p>⭐ <strong>Rina D.</strong>: "Best makeup artist! Made me feel like a queen."</p>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>📞 Let's Connect! 💬</h2>
+        <p>📲 Contact: <a href="https://wa.me/+919359545149" target="_blank">+91 935954149</a></p>
+        <p>📸 Instagram: <a href="https://www.instagram.com/sneha_abhyankar24" target="_blank">@sneha_abhyankar24</a></p>
+        <p>📍 Visit Us: <a href="https://www.google.com/maps/dir//21.1660343,78.9977057/@21.1661744,78.9153025,12z?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D" target="_blank">Google Map</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sneha Makeover - Beauty That Speaks ✨</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const reviewForm = document.getElementById("review-form");
+            const reviewList = document.getElementById("review-list");
+            const adminPassword = "sneha@24"; // Admin password for deletion
+
+            reviewForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const name = document.getElementById("name").value.trim();
+                const review = document.getElementById("review").value.trim();
+
+                if (name && review) {
+                    addReview(name, review);
+                    reviewForm.reset();
+                } else {
+                    alert("Please fill in both fields.");
+                }
+            });
+
+            function addReview(name, review) {
+                const reviewItem = document.createElement("div");
+                reviewItem.classList.add("review-item");
+
+                reviewItem.innerHTML = ` 
+                    <p>⭐ <strong>${name}:</strong> ${review}</p> 
+                    <button class="delete-btn">Delete</button>
+                `;
+
+                reviewItem.querySelector(".delete-btn").addEventListener("click", function () {
+                    let enteredPassword = prompt("Enter admin password to delete:");
+                    if (enteredPassword === adminPassword) {
+                        reviewItem.remove();
+                        alert("Review deleted successfully.");
+                    } else {
+                        alert("Incorrect password! You are not allowed to delete this review.");
+                    }
+                });
+
+                reviewList.appendChild(reviewItem);
+            }
+        });
+    </script>
+</body>
+
+</html>

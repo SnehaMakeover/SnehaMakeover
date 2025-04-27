@@ -1,0 +1,373 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(135deg, #ff6384, #ff85a2);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #ff4d6d;
+}
+/* Workshop Section Styling */
+.workshop {
+    background-color: #f9f3f3;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Heading Styling */
+.workshop h2 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+    color: #b565a7;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Workshop Content Alignment */
+.workshop-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 100%;
+}
+
+/* Workshop Text Details */
+.workshop-details {
+    max-width: 600px;
+    text-align: left;
+}
+
+.workshop p {
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Registration Box (Left Side) */
+.workshop1 {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px; /* Increased width */
+    text-align: left;
+    align-self: flex-start;
+}
+
+.workshop1 h3 {
+    font-size: 1.8em; /* Increased font size */
+    color: #b565a7;
+    margin-bottom: 20px;
+}
+
+.workshop1 input,
+.workshop1 textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 12px 0;
+    border: 1px solid #b565a7;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.workshop1 button {
+    background-color: #b565a7;
+    color: white;
+    padding: 15px 20px; /* Increased padding */
+    font-size: 1.2em; /* Increased font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%; /* Full width for the button */
+}
+
+.workshop1 button:hover {
+    background: #944c84;
+}
+
+/* Align registration box to the left */
+.workshop1-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?makeup,beauty') no-repeat center center/cover;
+    color: rgb(161, 158, 158);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.btn {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff2e5a;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff5f8;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    text-align: center;
+    width: 200px;
+}
+
+.service-btn {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: #ff5c85;
+}
+
+.service-btn:hover {
+    color: #fff;
+    background-color: #d64060;
+}
+
+/* Reviews Section */
+.reviews {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff5f8;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #fff5f8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form, .review-list {
+    flex: 1;
+    max-width: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-form h3, .review-list h3 {
+    font-size: 1.4rem;
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ff4d6d;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+    border-color: #d64060;
+}
+
+.review-form button {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.review-form button:hover {
+    background-color: #ff2e5a;
+    transform: scale(1.05);
+}
+
+.review-list {
+    text-align: left;
+}
+
+.review-item {
+    background: #ffe6ea;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.review-item:hover {
+    transform: scale(1.02);
+}
+
+.review-item p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.review-item strong {
+    color: #d64060;
+}
+
+/* Brides Gallery */
+.brides-gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff5f8;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px rgb(212, 91, 202);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ff6384, #ff85a2);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.contact a {
+    color: #ffecf1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff6384, #ff85a2);
+    color: white;
+    font-size: 1rem;
+}
