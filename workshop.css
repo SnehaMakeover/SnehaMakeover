@@ -1,106 +1,92 @@
-/* General Styles */
+/* Base styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff5f8;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background: linear-gradient(135deg, #ff6384, #ff85a2);
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ff6384, #ff85a2);
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-nav ul li {
-    margin: 0 15px;
+/* Form Section */
+.workshop-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: 0.3s;
-    padding: 8px 12px;
-    border-radius: 5px;
+.workshop-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d64060;
 }
 
-nav ul li a:hover {
-    background: white;
-    color: #ff4d6d;
+.workshop-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
-/* Workshop Section */
-
-.workshop {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #ffe6ea;
+.workshop-form input,
+.workshop-form select,
+.workshop-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
-.workshop h2 {
-    font-size: 2rem;
-    color: #d64060;
-    margin-bottom: 20px;
+.workshop-form button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
-.workshop p {
-    font-size: 1.2rem;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto 20px;
+.workshop-form button:hover {
+  background-color: #d64060;
 }
 
-.workshop-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+/* Footer */
+footer {
+  background-color: #ff6384;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
 
-.workshop-item {
-    background-color: #ffffff;
-    color: #333;
+/* Responsive */
+@media (max-width: 768px) {
+  .workshop-form {
+    margin: 20px 10px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    width: 250px;
-    text-align: center;
-}
+  }
 
-.workshop-item:hover {
-    transform: scale(1.05);
-    background-color: #ff5c85;
-    color: white;
-}
-
-.workshop-btn {
-    background-color: #ff4d6d;
-    color: white;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.workshop-btn:hover {
-    background-color: #d64060;
-    transform: scale(1.05);
+  header h1 {
+    font-size: 1.5rem;
+  }
 }
