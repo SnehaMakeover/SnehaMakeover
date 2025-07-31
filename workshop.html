@@ -1,86 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Makeover - Beauty Redefined</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Makeup Workshop - Sneha Makeover</title>
+    <link rel="stylesheet" href="workshop.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
     <header>
-        <div class="logo">
-            <img src="https://i.postimg.cc/qhXz2ghh/logo.png" alt="Sneha Makeover Logo" style="width: 180px; height: auto;">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#services">💅 Our Services</a></li>
-                <li><a href="#gallery">📸 Gallery</a></li>
-                <li><a href="#reviews">📝 Reviews</a></li>
-                <li><a href="#workshop">🎓 Workshop</a></li>
-                <li><a href="https://wa.me/91935954149" target="_blank">📞 Contact</a></li>
-            </ul>
-        </nav>
+        <h1>🎓 Sneha's Makeup Artistry Workshop</h1>
     </header>
 
-    <section class="workshop" id="workshop">
-        <h2>🎓 Makeup Artistry Workshop</h2>
-        <p>Join our exclusive workshop where we teach you the art of flawless makeup...</p>
-        <div class="workshop-content">
-            <div class="topics">
-                <h3>📝 Topics Covered:</h3>
-                <ul>
-                    <li>Traditional makeup</li>
-                    <li>Bridal makeup</li>
-                    <li>Creative makeup</li>
-                    <li>Hairstyle</li>
-                    <li>Hair preparation</li>
-                    <li>Makeup lessons</li>
-                    <li>Skin preparation</li>
-                    <li>Skin theory</li>
-                    <li>PH</li>
-                    <li>Proper application</li>
-                    <li>Baking</li>
-                    <li>Highlight/contour</li>
-                    <li>How to apply eye contact lenses</li>
-                    <li>How to apply lashes</li>
-                    <li>Brush knowledge & tools knowledge</li>
-                    <li>Product knowledge & many more things</li>
-                    <li>Daily hands-on practice</li>
-                    <li>Certificate included</li>
-                </ul>
-            </div>
-            <div class="topics-image">
-                <img src="image/Award (1).jpg" alt="Makeup Workshop" style="width: 40%; border-radius: 10px;">
-                <img src="image/Award (2).JPG" alt="Makeup Workshop" style="width: 40%; border-radius: 10px;">
-            </div>
-        </div>
-        <h3>👩‍🏫 Instructor:</h3>
-        <p><strong>Sneha Abhyankar</strong> - Professional Makeup Artist with 5+ years of experience.</p>
-    </section>
+    <section class="workshop-form">
+        <h2>📝 Register Now</h2>
+        <p style="text-align: center;">Fill out this form to reserve your spot in our upcoming workshop!</p>
 
-    <section class="workshop1" id="workshop1">
-        <h3>📝 Register Now:</h3>
-        <p>Fill out the form below to secure your spot in our upcoming workshop!</p>
-    
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2lOmvHFr6TdxlRrUqrZKIQowGx2Sb0yDFMBNgcFyqoTJ1KA/viewform?usp=dialog" 
-           target="_blank">
-            <button type="button">🎟️ Register Now</button>
-        </a>
+        <form action="https://formspree.io/f/xpzvjqwb" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="experience">Do you have any prior experience?</label>
+            <select id="experience" name="experience" required>
+                <option value="">-- Select --</option>
+                <option value="None">None</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+
+            <label for="goal">What do you wish to learn the most?</label>
+            <textarea id="goal" name="goal" rows="4" placeholder="E.g. bridal makeup, skin theory, lashes..." required></textarea>
+
+            <button type="submit">🎟️ Submit Registration</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Sneha Makeover - Beauty That Speaks ✨</p>
+        <p>&copy; 2025 Sneha Makeover • Empowering Beauty & Art ✨</p>
     </footer>
 
-    <script>
-        function showThankYouMessage() {
-            alert('Thank you for registering! We will get in touch with you shortly.');
-            document.getElementById('workshop-form').reset();
-        }
-    </script>
 </body>
 </html>
