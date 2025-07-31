@@ -1,44 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brides Gallery - Sneha Makeover</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="https://i.postimg.cc/qhXz2ghh/logo.png" alt="Sneha Makeover Logo" style="width: 180px; height: auto;">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-               
-                <li><a href="https://wa.me/+91935954149" target="_blank">📞 Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="brides-gallery" id="brides">
-        <h2>👰 Engagement Brides by <b>Sneha Abhyankar</b> </h2>
-        <div class="gallery-container">
-            <img src="image/E B Makeup (1).jpeg" alt="Bride 1">
-            <img src="image/E B Makeup (2).jpeg" alt="Bride 2">
-            <img src="image/E B Makeup (3).jpeg" alt="Bride 3">
-            <img src="image/E B Makeup (4).jpeg" alt="Bride 4">
-            <img src="image/E B Makeup (5).jpeg" alt="Bride 5">
-            <img src="image/E B Makeup (6).jpeg" alt="Bride 6">
-            <img src="image/E B Makeup (7).jpeg" alt="Bride 7">
-            <img src="image/E B Makeup (8).jpeg" alt="Bride 8">
-            <img src="image/E B Makeup (9).jpeg" alt="Bride 9">
-            <img src="image/E B Makeup (10).jpeg" alt="Bride 10">
-            
-            
 
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Sneha Makeover - Beauty That Speaks ✨</p>
-    </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneha Makeover - Client Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff5f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff6384, #ff85a2);
+      padding: 15px 50px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background: white;
+      color: #ff4d6d;
+    }
+
+    .reviews-section {
+      padding: 60px 20px;
+      background-color: #ffe6ea;
+      text-align: center;
+    }
+
+    .reviews-section h2 {
+      font-size: 2rem;
+      color: #d64060;
+      margin-bottom: 20px;
+    }
+
+    .review-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .review-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .reviewer-name {
+      font-weight: bold;
+      color: #ff4d6d;
+      margin-top: 10px;
+    }
+
+    .stars {
+      color: #ffc107;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff6384;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+
+      .review-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.postimg.cc/qhXz2ghh/logo.png" alt="Sneha Makeover Logo" style="width: 160px; height: auto;" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">💅 Services</a></li>
+        <li><a href="#gallery">📸 Gallery</a></li>
+        <li><a href="#reviews">📝 Reviews</a></li>
+        <li><a href="#workshop">🎓 Workshop</a></li>
+        <li><a href="https://wa.me/91935954149" target="_blank">📞 Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="reviews-section" id="reviews">
+    <h2>📝 Client Reviews</h2>
+    <p>Hear what our lovely clients have to say about their experience with Sneha Makeover!</p>
+
+    <div class="review-boxes">
+      <div class="review-card">
+        <p>"Sneha is absolutely amazing! She made me feel like a queen on my big day. Her makeup skills are unmatched!"</p>
+        <div class="reviewer-name">– Riya Sharma</div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="review-card">
+        <p>"Highly professional and sweet. Loved the flawless base and the eye makeup! Definitely recommending her!"</p>
+        <div class="reviewer-name">– Meera Patil</div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="review-card">
+        <p>"One of the best decisions ever was choosing Sneha for my engagement. She nailed the look I imagined."</p>
+        <div class="reviewer-name">– Ankita Deshmukh</div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sneha Makeover - Beauty That Speaks ✨</p>
+  </footer>
 </body>
+
 </html>
