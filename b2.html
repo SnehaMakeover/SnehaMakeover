@@ -1,43 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brides Gallery - Sneha Makeover</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="https://i.postimg.cc/qhXz2ghh/logo.png" alt="Sneha Makeover Logo" style="width: 180px; height: auto;">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-               
-                <li><a href="https://wa.me/+91935954149" target="_blank">📞 Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-      <section class="brides-gallery" id="brides">
-        <h2>💃 Party Makeup by <b>Sneha Abhyankar</b> </h2>
-        <div class="gallery-container">
-            <img src="image/Party  (1).jpeg" alt=" 1">
-            <img src="image/Party  (9).jpeg" alt="Bride 2">
-            <img src="image/Party  (10).jpeg" alt="Bride 3">
-            <img src="image/Party  (11).jpeg" alt="Bride 4">
-            <img src="image/Party  (12).jpeg" alt="Bride 5">
-            <img src="image/Party  (13).jpeg" alt="Bride 5">
-            <img src="image/Party  (14).jpeg" alt="Bride 5">
-            <img src="image/Party  (15).jpeg" alt="Bride 5">
-            <img src="image/Party  (16).jpeg" alt="Bride 5">
-            
 
-        </div>
-          </section>
-          <footer>
-            <p>&copy; 2025 Sneha Makeover - Beauty That Speaks ✨</p>
-        </footer>
-    </body>
-    </html>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sneha Makeover - Beauty Redefined</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff5f8;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: linear-gradient(135deg, #ff6384, #ff85a2);
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background: white;
+      color: #ff4d6d;
+    }
+
+    .workshop {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffe6ea;
+    }
+
+    .workshop h2 {
+      font-size: 2rem;
+      color: #d64060;
+      margin-bottom: 20px;
+    }
+
+    .workshop p {
+      font-size: 1.2rem;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+
+    .workshop-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .topics {
+      flex: 1 1 300px;
+      text-align: left;
+    }
+
+    .topics h3 {
+      color: #d64060;
+    }
+
+    .topics ul {
+      padding-left: 20px;
+    }
+
+    .topics-image {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .topics-image img {
+      width: 90%;
+      border-radius: 10px;
+    }
+
+    .workshop1 {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff0f4;
+    }
+
+    .workshop1 button {
+      background-color: #ff4d6d;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .workshop1 button:hover {
+      background-color: #d64060;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff6384;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .topics-image {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .topics-image img {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .topics-image img {
+        width: 90%;
+      }
+
+      nav ul li {
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.postimg.cc/qhXz2ghh/logo.png" alt="Sneha Makeover Logo" style="width: 160px; height: auto;" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">💅 Our Services</a></li>
+        <li><a href="#gallery">📸 Gallery</a></li>
+        <li><a href="#reviews">📝 Reviews</a></li>
+        <li><a href="#workshop">🎓 Workshop</a></li>
+        <li><a href="https://wa.me/91935954149" target="_blank">📞 Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="workshop" id="workshop">
+    <h2>🎓 Makeup Artistry Workshop</h2>
+    <p>
+      Join our exclusive workshop where we teach you the art of flawless
+      makeup...
+    </p>
+    <div class="workshop-content">
+      <div class="topics">
+        <h3>📝 Topics Covered:</h3>
+        <ul>
+          <li>Traditional makeup</li>
+          <li>Bridal makeup</li>
+          <li>Creative makeup</li>
+          <li>Hairstyle</li>
+          <li>Hair preparation</li>
+          <li>Makeup lessons</li>
+          <li>Skin preparation</li>
+          <li>Skin theory</li>
+          <li>PH</li>
+          <li>Proper application</li>
+          <li>Baking</li>
+          <li>Highlight/contour</li>
+          <li>How to apply eye contact lenses</li>
+          <li>How to apply lashes</li>
+          <li>Brush knowledge & tools knowledge</li>
+          <li>Product knowledge & many more things</li>
+          <li>Daily hands-on practice</li>
+          <li>Certificate included</li>
+        </ul>
+      </div>
+      <div class="topics-image">
+        <img src="image/Award (1).jpg" alt="Makeup Workshop" />
+        <img src="image/Award (2).JPG" alt="Makeup Workshop" />
+      </div>
+    </div>
+    <h3>👩‍🏫 Instructor:</h3>
+    <p><strong>Sneha Abhyankar</strong> - Professional Makeup Artist with 5+ years of experience.</p>
+  </section>
+
+  <section class="workshop1" id="workshop1">
+    <h3>📝 Register Now:</h3>
+    <p>Fill out the form below to secure your spot in our upcoming workshop!</p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2lOmvHFr6TdxlRrUqrZKIQowGx2Sb0yDFMBNgcFyqoTJ1KA/viewform?usp=dialog"
+      target="_blank">
+      <button type="button">🎟️ Register Now</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sneha Makeover - Beauty That Speaks ✨</p>
+  </footer>
+</body>
+
+</html>
